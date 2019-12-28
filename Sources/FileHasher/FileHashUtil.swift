@@ -60,7 +60,7 @@ extension FileHashUtil {
          }) { }
          var digest = Data(count: Int(CC_SHA256_DIGEST_LENGTH)) // Compute the SHA256 digest:
          digest.withUnsafeMutableBytes { (rawBufferPointer: UnsafeMutableRawBufferPointer) in // -> Int in
-            let bufferPointer = rawBufferPointer.bindMemory(to: UInt8.self) // ⚠️️ this is new to fix swift 5 deprecation warning
+            let bufferPointer = rawBufferPointer.bindMemory(to: UInt8.self) // ⚠️️ this is new to fix swift 5 deprecation warning was: digest.withUnsafeMutableBytes { _ = CC_SHA256_Final($0, &context) }
             _ = CC_SHA256_Final(bufferPointer.baseAddress, &context)
          }
          return digest
