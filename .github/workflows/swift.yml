@@ -1,0 +1,17 @@
+name: Swift
+
+on: [push]
+on:
+  schedule:
+  - cron: "0 19 * * 0-6"
+jobs:
+  build:
+
+    runs-on: macOS-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Build
+      run: swift build -v
+    - name: Run tests
+      run: swift test -v
