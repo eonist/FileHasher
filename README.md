@@ -6,7 +6,10 @@
 [![Github actions badge](https://badgen.net/github/checks/eonist/FileHasher?icon=github&label=Build%20Status)](https://github.com/eonist/FileHasher/actions)
 
 # FileHasher
-Hashing of files (fast)
+- Produce small hash of files I.e: "173539113" 
+- In contrast sha256 is very long: 235ef3f11f9d0d7e79c64c380f939b6b1c6c1ef7c34fceaa31075114c7280c49
+- Filehasher is very fast
+
 
 ### Installation:
 - SPM: `.url("https://github.com/eonist/FileHasher.git"), .branch("master")`
