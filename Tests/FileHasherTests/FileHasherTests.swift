@@ -10,6 +10,7 @@ class FileHasherTests: XCTestCase {
    }
    func testExample() {
       XCTAssertEqual("Hello, World!", "Hello, World!")
+      // add NetworkSugar, download the mp3 to a temp folder and check the hash, because spm and bundle 🤷
    }
    func testPerformanceExample() {
       self.measure { }
