@@ -1,4 +1,5 @@
 import XCTest
+import FileHasher
 
 class FileHasherTests: XCTestCase {
    override func setUp() {
