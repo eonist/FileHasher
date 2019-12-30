@@ -8,7 +8,7 @@
 # FileHasher
 - Produce small hash of files I.e: "173539113" 
 - In contrast sha256 is very long: 235ef3f11f9d0d7e79c64c380f939b6b1c6c1ef7c34fceaa31075114c7280c49
-- Filehasher is very fast and makes persistant hashses across devices and sessions (unlike apples own)
+- Filehasher is very fast and makes persistant hashes across devices and sessions (unlike apples own)
 
 ### Installation:
 - SPM: `.url("https://github.com/eonist/FileHasher.git"), .branch("master")`
