@@ -3,10 +3,13 @@
 [![SPM compatible](https://img.shields.io/badge/SPM-compatible-4BC51D.svg?style=flat)](https://github.com/apple/swift)
 ![mit](https://img.shields.io/badge/License-MIT-brightgreen.svg)
 [![SwiftLint Sindre](https://img.shields.io/badge/SwiftLint-Sindre-hotpink.svg)](https://github.com/sindresorhus/swiftlint-sindre)
+[![codebeat badge](https://codebeat.co/badges/68f513fe-ab51-4adc-a2d5-57fc80bf945f)](https://codebeat.co/projects/github-com-eonist-filehasher-master)
 [![Github actions badge](https://badgen.net/github/checks/eonist/FileHasher?icon=github&label=Build%20Status)](https://github.com/eonist/FileHasher/actions)
 
 # FileHasher
-Hashing of files (fast)
+- Produce small hash of files I.e: "173539113" 
+- In contrast sha256 is very long: 235ef3f11f9d0d7e79c64c380f939b6b1c6c1ef7c34fceaa31075114c7280c49
+- Filehasher is very fast and makes persistant hashes across devices and sessions (unlike apples own)
 
 ### Installation:
 - SPM: `.url("https://github.com/eonist/FileHasher.git"), .branch("master")`
