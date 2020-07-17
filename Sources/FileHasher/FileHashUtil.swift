@@ -4,7 +4,7 @@ import CommonCrypto
  * Wrapper around commoncrypt
  * - Note this is internal, use @testable if you need to test things
  * - Note: when you need to hash clipboard data: https://stackoverflow.com/questions/35749197/how-to-use-common-crypto-and-or-calculate-sha256-in-swift-2-3
- * - Fixme: ⚠️️ Move to own framework / repo, maybe name the repo FileHasherKit?
+ * - Fixme: ⚠️️ maybe name the repo FileHasherKit, and this class FileHasher?
  */
 public final class FileHashUtil {
    /**
@@ -75,13 +75,13 @@ extension FileHashUtil {
  */
 extension String {
    /**
-    * djb2hash (persistant Hash accross excecutions)
+    * djb2hash (persistant Hash accross excecutions, for iOS / mac etc)
     * - Note: We use this because Apples own: string.hashValue is not persistant across runs / builds
     * ## Examples:
     * "my-string".persistantHash
     */
    fileprivate var djb2hash: Int {
-      return self.utf8.reduce(5381) {
+      self.utf8.reduce(5381) {
          ($0 << 5) &+ $0 &+ Int($1)
       }
    }

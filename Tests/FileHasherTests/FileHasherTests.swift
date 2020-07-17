@@ -3,18 +3,9 @@ import FileHasher
 import ResourceHelper
 
 class FileHasherTests: XCTestCase {
-   override func setUp() {
-      super.setUp()
-   }
-   override func tearDown() {
-      super.tearDown()
-   }
    func testExample() {
       //XCTAssertEqual("Hello, World!", "Hello, World!")
       XCTAssertTrue(hashTest())
-   }
-   func testPerformanceExample() {
-      self.measure { }
    }
 }
 extension FileHasherTests {
