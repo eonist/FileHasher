@@ -17,7 +17,6 @@ public final class FileHashUtil {
     */
    public static func truncatedHash(url: URL) -> String? {
       guard let hash: String = sha256(url: url) else { return nil }
-//      guard let data: Data = hash.data(using: .utf8) else { return nil }
       return "\(hash.djb2hash)"
    }
 }
@@ -37,6 +36,7 @@ extension FileHashUtil {
    /**
     * sha256
     * - Note: withUnsafeBytes etc ref https://stackoverflow.com/a/55440276/5389500
+    * - Fixme: ⚠️️ make this throw
     */
    private static func sha256(url: URL) -> Data? {
       do {
