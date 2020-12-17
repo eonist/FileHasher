@@ -86,10 +86,14 @@ extension String {
       }
    }
 }
+/**
+ * Data
+ */
 extension Data {
    /**
-    * let shaData = "Here is the test string".data(using:.utf8).sha256
-    * let shaHex =  shaData!.map { String(format: "%02hhx", $0) }.joined()
+    * ## Examples:
+    * let shaData: Data? = "Here is the test string".data(using: .utf8)?.sha256
+    * let shaHex: String? = shaData?.map { String(format: "%02hhx", $0) }.joined()
     * print("shaHex: \(shaHex)")
     */
    public var sha256: Data? {
