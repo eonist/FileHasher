@@ -17,6 +17,6 @@
 ### Examples:
 ```swift
 let fromFilePath: String = NSString(string: "~/Desktop/demo.mp3").expandingTildeInPath
-guard let url:URL = URL.init(fileURLWithPath: fromFilePath)  else { Swift.print("err url"); return }
-Swift.print("hash:  \(FileHashUtil.truncatedHash(url: url))") // 173539113
+guard let url = URL(fileURLWithPath: fromFilePath) else { Swift.print("err url"); return }
+Swift.print("hash: \(FileHashUtil.truncatedHash(url: url))") // 173539113
 ```
