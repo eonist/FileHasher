@@ -3,7 +3,6 @@
 [![SPM compatible](https://img.shields.io/badge/SPM-compatible-4BC51D.svg?style=flat)](https://github.com/apple/swift)
 ![mit](https://img.shields.io/badge/License-MIT-brightgreen.svg)
 [![SwiftLint Sindre](https://img.shields.io/badge/SwiftLint-Sindre-hotpink.svg)](https://github.com/sindresorhus/swiftlint-sindre)
-[![codebeat badge](https://codebeat.co/badges/68f513fe-ab51-4adc-a2d5-57fc80bf945f)](https://codebeat.co/projects/github-com-eonist-filehasher-master)
 ![Tests](https://github.com/eonist/FileHasher/workflows/Tests/badge.svg)
 
 # FileHasher 🧬
@@ -20,3 +19,6 @@ let fromFilePath: String = NSString(string: "~/Desktop/demo.mp3").expandingTilde
 guard let url = URL(fileURLWithPath: fromFilePath) else { Swift.print("err url"); return }
 Swift.print("hash: \(FileHashUtil.truncatedHash(url: url))") // 173539113
 ```
+
+### Todo:
+- Create problem solution statement in readme 👈
