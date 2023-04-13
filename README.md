@@ -2,7 +2,7 @@
 ![platform](https://img.shields.io/badge/Platform-iOS/macOS-blue.svg)
 [![SPM compatible](https://img.shields.io/badge/SPM-compatible-4BC51D.svg?style=flat)](https://github.com/apple/swift)
 ![mit](https://img.shields.io/badge/License-MIT-brightgreen.svg)
-[![SwiftLint Sindre](https://img.shields.io/badge/SwiftLint-Sindre-hotpink.svg)](https://github.com/sindresorhus/swiftlint-sindre)
+[![codebeat badge](https://codebeat.co/badges/9a3df008-6e71-42bc-ab29-301e9e45dc79)](https://codebeat.co/projects/github-com-eonist-filehasher-master)
 ![Tests](https://github.com/eonist/FileHasher/workflows/Tests/badge.svg)
 
 # FileHasher 🧬
